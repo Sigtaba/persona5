@@ -27,12 +27,26 @@ button
   border: none
   text-shadow: 2px 2px 0px #fe0000
   letter-spacing: -10px
+  position: relative
   &:hover
     transform: scale(1.5,1.5) rotateZ(-20deg)
+    &::after
+      z-index: -1
+      left: 100px
+      top: 50px
+      position: absolute
+      content: ''
+      height: 70px
+      width: 130px
+      background-color: white
+      opacity: .7
+      animation: jigs .5s both infinite
+      animation-direction: alternate
   &:focus
     outline: none
   &:active
     outline: none
+
 
 #title1, #title2
   font-family: 'earwig'
@@ -70,9 +84,20 @@ button
     bottom: 50px
     text-align: center
 
-
-
-
 .inverse
   color: #fe0000
   text-shadow: 6px 6px 0px black
+
+@keyframes jigs
+  0%
+    transform: skew(70deg) rotate(0deg) scale(1)
+  20%
+    transform: skew(12deg) rotate(10deg) scale(1.2)
+  40%
+    transform: skew(32deg) rotate(-10deg) scale(1)
+  60%
+    transform: skew(1deg) rotate(15deg) scale(1.5)
+  80%
+    transform: skew(7deg) rotate(2deg) scale(1.1)
+  100%
+    transform: skew(42deg) rotate(-20deg) scale(1.6)
