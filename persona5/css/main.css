@@ -4,4 +4,35 @@
 button {
   font-family: "earwig"; }
 
+#title1 {
+  font-family: "earwig";
+  font-size: 100px;
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  color: black;
+  text-shadow: 8px 8px 8px #fe0000;
+  letter-spacing: -10px; }
+
+#title2 {
+  font-family: "earwig";
+  font-size: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  color: black;
+  text-shadow: 8px 8px 8px #fe0000;
+  letter-spacing: -10px; }
+
+.inverse {
+  color: #fe0000;
+  text-shadow: 8px 8px 8px black; }
+
+body {
+  height: 100vh;
+  background-image: url("../img/background3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
 /*# sourceMappingURL=main.css.map */
