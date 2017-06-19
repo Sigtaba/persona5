@@ -7,6 +7,9 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
+  @media screen and (max-width: 1050px) {
+    body {
+      background-image: url("../img/mobile-background.jpg"); } }
 
 .container {
   height: 100vh;
@@ -27,26 +30,50 @@ button {
   letter-spacing: -10px; }
   button:hover {
     transform: scale(1.5, 1.5) rotateZ(-20deg); }
+  button:focus {
+    outline: none; }
+  button:active {
+    outline: none; }
+
+#title1, #title2 {
+  font-family: "earwig";
+  font-size: 100px;
+  color: black;
+  text-shadow: 6px 6px 8px #fe0000;
+  letter-spacing: -10px; }
+  @media screen and (max-width: 1600px) {
+    #title1, #title2 {
+      font-size: 70px; } }
+  @media screen and (max-width: 1050px) {
+    #title1, #title2 {
+      font-size: 90px; } }
+  @media screen and (max-width: 800px) {
+    #title1, #title2 {
+      font-size: 70px; } }
 
 #title1 {
-  font-family: "earwig";
-  font-size: 100px;
   position: absolute;
   bottom: 100px;
-  right: 100px;
-  color: black;
-  text-shadow: 6px 6px 8px #fe0000;
-  letter-spacing: -10px; }
+  right: 100px; }
+  @media screen and (max-width: 800px) {
+    #title1 {
+      right: 20px;
+      bottom: 150px; } }
+  @media screen and (max-width: 528px) {
+    #title1 {
+      bottom: 250px;
+      text-align: center;
+      right: 50px; } }
 
 #title2 {
-  font-family: "earwig";
-  font-size: 100px;
   position: absolute;
   bottom: 0;
-  right: 100px;
-  color: black;
-  text-shadow: 6px 6px 8px #fe0000;
-  letter-spacing: -10px; }
+  right: 100px; }
+  @media screen and (max-width: 800px) {
+    #title2 {
+      right: 20px;
+      bottom: 50px;
+      text-align: center; } }
 
 .inverse {
   color: #fe0000;

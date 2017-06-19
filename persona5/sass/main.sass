@@ -6,6 +6,9 @@ body
   background-repeat: no-repeat
   background-position: center
   background-size: cover
+  @media screen and (max-width: 1050px)
+    background-image: url('../img/mobile-background.jpg')
+
 
 .container
   height: 100vh
@@ -26,26 +29,48 @@ button
   letter-spacing: -10px
   &:hover
     transform: scale(1.5,1.5) rotateZ(-20deg)
+  &:focus
+    outline: none
+  &:active
+    outline: none
 
-#title1
+#title1, #title2
   font-family: 'earwig'
   font-size: 100px
+  color: black
+  text-shadow: 6px 6px 8px #fe0000
+  letter-spacing: -10px
+  @media screen and (max-width: 1600px)
+    font-size: 70px
+  @media screen and (max-width: 1050px)
+    font-size: 90px
+  @media screen and (max-width: 800px)
+    font-size: 70px
+
+#title1
   position: absolute
   bottom: 100px
   right: 100px
-  color: black
-  text-shadow: 6px 6px 8px #fe0000
-  letter-spacing: -10px
+  @media screen and (max-width: 800px)
+    right: 20px
+    bottom: 150px
+  @media screen and (max-width: 528px)
+    bottom: 250px
+    text-align: center
+    right: 50px
+
+
 
 #title2
-  font-family: 'earwig'
-  font-size: 100px
   position: absolute
   bottom: 0
   right: 100px
-  color: black
-  text-shadow: 6px 6px 8px #fe0000
-  letter-spacing: -10px
+  @media screen and (max-width: 800px)
+    right: 20px
+    bottom: 50px
+    text-align: center
+
+
 
 
 .inverse
